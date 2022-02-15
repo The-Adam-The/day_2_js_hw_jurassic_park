@@ -13,9 +13,9 @@ describe('Park', function() {
 
       park = new Park('Dino World', 100, [dinosaur]);
       parkTwo = new Park('Dino Land', 120, [dinosaur, dinosaurTwo]);
-      parkThree = new Park('Dino World Land', 130, [dinosaur, dinosaurTwo, dinosaurThree, dinosaurFour])
-      parkFour = new Park('Dino Land World', 135, [dinosaur, dinosaurTwo, dinosaurThree, dinosaurFive]))
-    })
+      parkThree = new Park('Dino World Land', 130, [dinosaur, dinosaurTwo, dinosaurThree, dinosaurFour]);
+      parkFour = new Park('Dino Land World', 135, [dinosaur, dinosaurTwo, dinosaurThree, dinosaurFive]);
+    });
 
   it('should have a name', function() {
     assert.strictEqual(park.name, 'Dino World');
@@ -71,7 +71,7 @@ describe('Park', function() {
 
   it('should remove all of the passed in species', function() {
     parkThree.removeDinosaurs("t-rex");
-    assert.deepStrictEqual([dinosaurTwo, dinosaurThree], parkThree.dinosaurs)
-  })
+    assert.deepStrictEqual([dinosaurTwo, dinosaurThree], parkThree.dinosaurs);
+  });
 
 });
