@@ -1,7 +1,8 @@
-const Park = function(name, ticketPrice, dinosaurs){
+const Park = function(name, ticketPrice, dinosaurs, diets = NaN){
     this.name = name;
     this.ticketPrice = ticketPrice;
-    this.dinosaurs = dinosaurs;  
+    this.dinosaurs = dinosaurs;
+    this.diets = diets;  
 }
 
 Park.prototype.add = function(dinosaur) {
